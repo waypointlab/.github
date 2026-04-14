@@ -1,12 +1,37 @@
-## Hi there 👋
+<div align="center">
 
-<!--
+<img src="https://raw.githubusercontent.com/waypointlab/.github/main/assets/logo-large.svg" alt="Waypoint Logo" width="128" />
 
-**Here are some ideas to get you started:**
+# Waypoint
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+Run servers. Control everything. No pain.
+
+</div>
+
+---
+
+## What
+
+Waypoint is a modern server panel focused on flexibility, speed, and real customization.
+
+---
+
+## What’s different
+
+* real customization - users craft their own panel
+* built-in themes and plugins (not locked system-wide)
+* adapter system → use any backend (Wings, Docker, VMs, etc.)
+* fast and lightweight
+* quick to set up, easy to extend
+
+---
+
+## Status
+
+⚠️ In Development
+
+---
+
+## License
+
+GPLv3
