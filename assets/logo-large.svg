@@ -1,0 +1,75 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 512 512"
+    style="
+        --bg: #101010;
+        --star: #ffffff;
+        --glow: #4169E1;
+        --scale: 1.5;
+        color: var(--star);
+    "
+>
+    <defs>
+        <path
+            id="star-arm"
+            d="M 125.466 253.036
+               C 119.134 253.82 115.567 254.889 115.567 255.999
+               C 115.567 257.111 119.134 258.177 125.466 258.961
+               L 232.045 272.148
+               C 238.392 272.936 247.026 273.376 256 273.376
+               C 264.972 273.376 273.593 272.936 279.928 272.148
+               L 386.504 258.961
+               C 392.866 258.177 396.433 257.111 396.433 255.999
+               C 396.433 254.889 392.866 253.82 386.504 253.036
+               L 279.928 239.849
+               C 273.593 239.065 264.972 238.624 256 238.624
+               C 247.026 238.624 238.392 239.065 232.045 239.849
+               L 125.466 253.036 Z"
+        />
+
+        <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="20" />
+        </filter>
+    </defs>
+
+    <!-- Background (not scaled) -->
+
+    <!-- ===== GLOBAL SCALE (WORKS) ===== -->
+    <g
+        style="
+            transform: scale(var(--scale));
+            transform-origin: center;
+            transform-box: fill-box;
+        "
+    >
+        <!-- ===== GLOW ===== -->
+        <g fill="var(--glow)" filter="url(#glow)">
+            <!-- Cardinals -->
+            <use href="#star-arm" />
+            <use href="#star-arm" transform="matrix(0,1,-1,0,512,0)" />
+
+            <!-- Diagonals -->
+            <g transform="rotate(45 256 256)">
+                <g transform="translate(256 256) scale(0.72) translate(-256 -256)">
+                    <use href="#star-arm" />
+                    <use href="#star-arm" transform="matrix(0,1,-1,0,512,0)" />
+                </g>
+            </g>
+        </g>
+
+        <!-- ===== STAR ===== -->
+        <g fill="currentColor">
+            <!-- Cardinals -->
+            <use href="#star-arm" />
+            <use href="#star-arm" transform="matrix(0,1,-1,0,512,0)" />
+
+            <!-- Diagonals -->
+            <g transform="rotate(45 256 256)">
+                <g transform="translate(256 256) scale(0.72) translate(-256 -256)">
+                    <use href="#star-arm" />
+                    <use href="#star-arm" transform="matrix(0,1,-1,0,512,0)" />
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
