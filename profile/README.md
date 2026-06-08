@@ -34,4 +34,4 @@ Waypoint is a modern server panel focused on flexibility, speed, and real custom
 
 ## License
 
-GPLv3
+AGPLv3
